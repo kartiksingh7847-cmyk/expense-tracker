@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #fdfcdc;
+  font-family: "Courier New", Courier, monospace;
+}
+header {
+  background-color: #00afb9;
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  padding: 15px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+section {
+  border-radius: 24px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.78);
+  width: 60vw;
+}
+.box {
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  background-color: #f07167;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 24px;
+  column-gap: 24px;
+}
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 150px;
+}
+label {
+  font-size: 1.5rem;
+}
+input {
+  padding: 12px;
+  border: #ccc;
+  border-radius: 7px;
+  font-size: 1.3rem;
+}
+button {
+  padding: 8px;
+  background-color: orange;
+  color: white;
+  border-radius: 12px;
+  border: none;
+  margin: 0 70px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: transform 0.4s;
+}
+button:hover {
+  transform: scale(1.1);
+}
+button:active {
+  transform: scale(0.9);
+}
+.total {
+  background-color: #fed9b7;
+  padding: 20px;
+  font-size: 1.5rem;
+}
+.list {
+  background-color: #9b287b;
+  font-size: 1.5rem;
+  border-bottom-right-radius: 24px;
+  border-bottom-left-radius: 24px;
+  min-height: 300px;
+}
+li {
+  padding: 12px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  color: white;
+  font-weight: bold;
+}
+.remove {
+  background-color: red;
+}
